@@ -41,356 +41,483 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="https://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
-					</p>
-					<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYI553M&placement=revealjscom" id="_carbonads_js"></script>
-				</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down the <strong>alt</strong> key (<strong>ctrl</strong> in Linux) and click on any element to zoom towards it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Click again to zoom back out.
-					</p>
-					<p>
-						(NOTE: Use ctrl + click in Linux.)
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p>
-							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
-							<span style="display: inline-block;" class="fragment fade-up">up, </span>
-							<span style="display: inline-block;" class="fragment fade-down">down, </span>
-							<span style="display: inline-block;" class="fragment fade-left">left</span>
-						</p>
-						<p class="fragment fade-in-then-out">fade-in-then-out</p>
-						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
-						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+				<section data-autoslide="20000" data-background-video="./localfiles/202408_Wasserturm_Neu_Ulm_und_Muenster.webm.1080p.vp9.webm" data-background-color="#000000">
+						<div style="position: absolute; width: 35%; left: 0; top: 90%; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h3>Freie Drohnenaufnahmen</h3>
+							<p>Unsere Aktiven tragen auch Luftaufnahmen unter Freier Lizenz bei – so wie hier den Neu-Ulmer Wasserturm im Spätsommer.</p>
+							<p><small>Luftaufnahme des Wasserturm Neu-Ulm an einem Spätsommertag 2024, stk, &lt;https://commons.wikimedia.org/wiki/File:202408_Wasserturm_Neu_Ulm_und_Muenster.webm&gt;. CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
 						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
+							
 				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				<section data-background-image="./localfiles/2025-07-11_Wiley_aerial_view.jpg" >
+					<div style="position: relative; width: 50%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Freie Drohnenaufnahmen</h3>
+						<p>Mit der temporärhaus-Drohne fertigen wir Luftaufnahmen von Denkmälern, Stadtteilen und Landschaften, allesamt als Gemeingut unter Creative-Commons-Lizenz.</p>
+						<p>Aus der Luft lässt sich oft ein besserer Eindruck eines Ortsteils erfahren – so wie hier vom Neu-Ulmer Wiley.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025-07-11_Wiley_aerial_view.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+				
+				<section data-background-image="./localfiles/2025-08-24_Luftbild_Ehinger_Tor_Gesamtansicht_02.jpg" >
+					<div style="position: relative; width: 50%; left: 0; top: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Freie Drohnenaufnahmen</h3>
+						<p>Mit der temporärhaus-Drohne fertigen wir Luftaufnahmen von Denkmälern, Stadtteilen und Landschaften, allesamt als Gemeingut unter Creative-Commons-Lizenz.</p>
+						<p>Ungewohnte Ansicht dreier prägender Bauten in Ulm: Links das Universum-Center, mittig das Ehinger Tor mit der gleichnamigen Haltestelle, rechts hinten das Münster.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025-08-24_Luftbild_Ehinger_Tor_Gesamtansicht_02.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+				
+				<section data-background-image="./localfiles/2025-08-24_Luftbild_Scholl-Gymnasium_und_Ehinger_Tor.jpg" >
+					<div style="position: absolute; width: 50%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Freie Drohnenaufnahmen</h3>
+						<p>Mit der temporärhaus-Drohne fertigen wir Luftaufnahmen von Denkmälern, Stadtteilen und Landschaften, allesamt als Gemeingut unter Creative-Commons-Lizenz.</p>
+						<p>Das Scholl-Gymnasium in der ehemaligen Wagnerschule, links das Ehinger Tor.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025-08-24_Luftbild_Scholl-Gymnasium_und_Ehinger_Tor.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+<!--				<section data-background-image="./localfiles/Luftaufnahme_Mariä_Geburt_(Altenstadt_(Iller))_2.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Freie Drohnenaufnahmen</h3>
+						<p>Mit der temporärhaus-Drohne fertigen wir Luftaufnahmen von Denkmälern, Stadtteilen und Landschaften, allesamt als Gemeingut unter Creative-Commons-Lizenz.</p>
+						<p>Das Baudenkmal „Mariä Geburt“ in Altenstadt im Landkreis Neu-Ulm.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Deutsches_Technikmuseum_Berlin_mit_Rosinenbomber,_Luftaufnahme-0035.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section> -->
+
+				<section data-background-image="./localfiles/Sinninger_Badesee_aerial_view.jpg" >
+					<div style="position: absolute; width: 45%; left: 0; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Freie Drohnenaufnahmen</h3>
+						<p>Mit der temporärhaus-Drohne fertigen wir Luftaufnahmen von Denkmälern, Stadtteilen und Landschaften, allesamt als Gemeingut unter Creative-Commons-Lizenz.</p>
+						<p>Der Badesee bei Sinningen links der Iller an einem Sommerabend.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Sinninger_Badesee_aerial_view.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section data-background-iframe="https://hakim.se" data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-						<h2>Iframe Backgrounds</h2>
-						<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the page in the background.</p>
-					</div>
+<!--				<section data-background-image="./localfiles/Illerwehr_(Filzingen)_2.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Freie Drohnenaufnahmen</h3>
+						<p>Mit der temporärhaus-Drohne fertigen wir Luftaufnahmen von Denkmälern, Stadtteilen und Landschaften, allesamt als Gemeingut unter Creative-Commons-Lizenz.</p>
+						<p>Das Illerwehr bei Filzingen im südlichen Landkreis Neu-Ulm. Hier zweigt der Illerkanal von der Iller ab.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Deutsches_Technikmuseum_Berlin_mit_Rosinenbomber,_Luftaufnahme-0035.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section> -->
+
+				<section data-background-image="./localfiles/Ulmer_Zelt_2025_Aerial_View_01.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Freie Drohnenaufnahmen</h3>
+						<p>Mit der temporärhaus-Drohne fertigen wir Luftaufnahmen von Denkmälern, Stadtteilen und Landschaften, allesamt als Gemeingut unter Creative-Commons-Lizenz.</p>
+						<p>Das Festivalgelände des Ulmer Zelt an einem Sommerabend.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Ulmer_Zelt_2025_Aerial_View_01.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim data-line-numbers="4,8-9">
-import React, { useState } from 'react';
-
-function Example() {
-  const [count, setCount] = useState(0);
-
-  return (
-    &lt;div&gt;
-      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-        Click me
-      &lt;/button&gt;
-    &lt;/div&gt;
-  );
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				<section data-background-image="./localfiles/Wilhelmsburg_aerial_view_2025_02.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Die Bundesfestung</h3>
+						<p>Gemeinsam mit dem Förderkreis Bundesfestung dokumentieren wir nach und nach die noch bestehenden Werke der Bundesfestung unter Freier Lizenz.</p>
+						<p>Hier eine Luftansicht der Wilhelmsburg.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Wilhelmsburg_aerial_view_2025_02.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
+				<section data-background-image="./localfiles/Wilhelmsburg_aerial_view_2025_04.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Die Bundesfestung</h3>
+						<p>Gemeinsam mit dem Förderkreis Bundesfestung dokumentieren wir nach und nach die noch bestehenden Werke der Bundesfestung unter Freier Lizenz.</p>
+						<p>Hier eine Gesamtansicht der Wilhelmsburg aus der Luft.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Wilhelmsburg_aerial_view_2025_04.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+				<section data-background-image="./localfiles/Werk_XI_Aerial_View.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Die Bundesfestung</h3>
+						<p>Gemeinsam mit dem Förderkreis Bundesfestung dokumentieren wir nach und nach die noch bestehenden Werke der Bundesfestung unter Freier Lizenz.</p>
+						<p>Aus der Luft ist das Werk XI unterhalb der Wilhelmsburg auf ganz andere Weise erfahrbar.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Werk_XI_Aerial_View.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
+				<section data-background-image="./localfiles/Werk_XI_Aerial_View_4.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Die Bundesfestung</h3>
+						<p>Gemeinsam mit dem Förderkreis Bundesfestung dokumentieren wir nach und nach die noch bestehenden Werke der Bundesfestung unter Freier Lizenz.</p>
+						<p>Aus der Luft ist das Werk XI unterhalb der Wilhelmsburg auf ganz andere Weise erfahrbar.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Werk_XI_Aerial_View_4.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
+				<section data-background-image="./localfiles/Bundesfestung_Fort_Friedrichsau_Luftaufnahme.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Die Bundesfestung</h3>
+						<p>Gemeinsam mit dem Förderkreis Bundesfestung dokumentieren wir nach und nach die noch bestehenden Werke der Bundesfestung unter Freier Lizenz.</p>
+						<p>Die Form des Fort Friedrichsau erschließt sich erst aus der Luft vollständig!</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Bundesfestung_Fort_Friedrichsau_Luftaufnahme.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
+				<section data-background-image="./localfiles/2025-01_Blaubeurer_Tor_DJI_20250101151543_0174_D.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Dokumentation einer sich verändernden Stadt</h3>
+						<p>Neu-Ulm und Ulm verändern sich ständig – Baustellen prägen nicht nur während der Bauzeit die Stadt, sondern unterteilen das Stadtbild klar in ein „vorher“ und „nachher“.</p>
+						<p>Wir versuchen, das verschwindende „vorher“ und die Bauphase für die Nachwelt zu erhalten! Hier der Bauzustand am Blaubeurer Tor am 1. Januar 2025.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025-01_Blaubeurer_Tor_DJI_20250101151543_0174_D.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
+				<section data-background-image="./localfiles/2025-08-24_Luftaufnahme_Blaubeurer_Tor_01.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Dokumentation einer sich verändernden Stadt</h3>
+						<p>Neu-Ulm und Ulm verändern sich ständig – Baustellen prägen nicht nur während der Bauzeit die Stadt, sondern unterteilen das Stadtbild klar in ein „vorher“ und „nachher“.</p>
+						<p>Wir versuchen, das verschwindende „vorher“ und die Bauphase für die Nachwelt zu erhalten! Im August sieht es am Blaubeurer Tor bereits sehr anders aus.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025-08-24_Luftaufnahme_Blaubeurer_Tor_01.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				<section data-background-image="./localfiles/2025-08-24_Luftaufnahme_Blaubeurer_Tor_03.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Dokumentation einer sich verändernden Stadt</h3>
+						<p>Neu-Ulm und Ulm verändern sich ständig – Baustellen prägen nicht nur während der Bauzeit die Stadt, sondern unterteilen das Stadtbild klar in ein „vorher“ und „nachher“.</p>
+						<p>Wir versuchen, das verschwindende „vorher“ und die Bauphase für die Nachwelt zu erhalten! Detailaufnahme am Blaubeurer Tor im August 2025.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025-08-24_Luftaufnahme_Blaubeurer_Tor_03.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
+				<section data-background-image="./localfiles/Avenio_M_Wagen_52_am_Eselsberg_2.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Freie Drohnenaufnahmen</h3>
+						<p>Mit der temporärhaus-Drohne fertigen wir Luftaufnahmen von Denkmälern, Stadtteilen und Landschaften, allesamt als Gemeingut unter Creative-Commons-Lizenz.</p>
+						<p>Der Avenio-Wagen Nummer 52 an einem Julinachmittag am Eselsberg.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Avenio_M_Wagen_52_am_Eselsberg_2.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
+				<section data-background-image="./localfiles/Fischerstechen_Ulm_und_Neu-Ulm_2025_30.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Egal ob altes oder relativ neues Brauchtum, wir halten viel davon fest und erhalten es unter Freier Lizenz für die Nachwelt.</p>
+						<p>Unsere Aufnahmen vom Fischerstechen 2025 waren die ersten Fotos unter Creative-Commons-Lizenz seit 2009.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Fischerstechen_Ulm_und_Neu-Ulm_2025_30.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
+				<section data-background-image="./localfiles/Fischerstechen_Ulm_und_Neu-Ulm_2025_20.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Egal ob altes oder relativ neues Brauchtum, wir halten viel davon fest und erhalten es unter Freier Lizenz für die Nachwelt.</p>
+						<p>Unsere Aufnahmen vom Fischerstechen 2025 waren die ersten Fotos unter Creative-Commons-Lizenz seit 2009.</p>						
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Fischerstechen_Ulm_und_Neu-Ulm_2025_20.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
+				<section data-background-image="./localfiles/Fischerstechen_Ulm_und_Neu-Ulm_2025_09.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Egal ob altes oder relativ neues Brauchtum, wir halten viel davon fest und erhalten es unter Freier Lizenz für die Nachwelt.</p>
+						<p>Unsere Aufnahmen vom Fischerstechen 2025 waren die ersten Fotos unter Creative-Commons-Lizenz seit 2009.</p>						
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Fischerstechen_Ulm_und_Neu-Ulm_2025_09.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="https://slides.com">Try the reveal.js editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+				<section data-background-image="./localfiles/Fischerstechen_Ulm_und_Neu-Ulm_2025_03.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Egal ob altes oder relativ neues Brauchtum, wir halten viel davon fest und erhalten es unter Freier Lizenz für die Nachwelt.</p>
+						<p>Unsere Aufnahmen vom Fischerstechen 2025 waren die ersten Fotos unter Creative-Commons-Lizenz seit 2009.</p>	
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Fischerstechen_Ulm_und_Neu-Ulm_2025_03.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
 				</section>
+
+				<section data-background-image="./localfiles/Fischerstechen_Ulm_und_Neu-Ulm_2025_29.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Egal ob altes oder relativ neues Brauchtum, wir halten viel davon fest und erhalten es unter Freier Lizenz für die Nachwelt.</p>
+						<p>Unsere Aufnahmen vom Fischerstechen 2025 waren die ersten Fotos unter Creative-Commons-Lizenz seit 2009.</p>	
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Fischerstechen_Ulm_und_Neu-Ulm_2025_29.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/2025_Lebendiger_Kreuzweg_Ulm_Neu-Ulm_P1047603.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Egal ob altes oder relativ neues Brauchtum, wir halten viel davon fest und erhalten es unter Freier Lizenz für die Nachwelt.</p>
+						<p>Vergleichsweise neues Brauchtum ist der „Lebendige Kreuzweg“ – immerhin aber schon 20 Jahre alt und eine von nur wenigen solchen Veranstaltungen außerhalb Italiens.</p>	
+
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025_Lebendiger_Kreuzweg_Ulm_Neu-Ulm_P1047603.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/2025_Lebendiger_Kreuzweg_Ulm_Neu-Ulm_P1047646.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Egal ob altes oder relativ neues Brauchtum, wir halten viel davon fest und erhalten es unter Freier Lizenz für die Nachwelt.</p>
+						<p>Vergleichsweise neues Brauchtum ist der „Lebendige Kreuzweg“ – immerhin aber schon 20 Jahre alt und eine von nur wenigen solchen Veranstaltungen außerhalb Italiens.</p>	
+
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025_Lebendiger_Kreuzweg_Ulm_Neu-Ulm_P1047646.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/2025_Lebendiger_Kreuzweg_Ulm_Neu-Ulm_P1047679.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Egal ob altes oder relativ neues Brauchtum, wir halten viel davon fest und erhalten es unter Freier Lizenz für die Nachwelt.</p>
+						<p>Vergleichsweise neues Brauchtum ist der „Lebendige Kreuzweg“ – immerhin aber schon 20 Jahre alt und eine von nur wenigen solchen Veranstaltungen außerhalb Italiens.</p>	
+
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025_Lebendiger_Kreuzweg_Ulm_Neu-Ulm_P1047679.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/2025_Lebendiger_Kreuzweg_Ulm_Neu-Ulm_P1047752.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Egal ob altes oder relativ neues Brauchtum, wir halten viel davon fest und erhalten es unter Freier Lizenz für die Nachwelt.</p>
+						<p>Vergleichsweise neues Brauchtum ist der „Lebendige Kreuzweg“ – immerhin aber schon 20 Jahre alt und eine von nur wenigen solchen Veranstaltungen außerhalb Italiens.</p>	
+
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025_Lebendiger_Kreuzweg_Ulm_Neu-Ulm_P1047752.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/2025_Lebendiger_Kreuzweg_Ulm_Neu-Ulm_P1047736.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Egal ob altes oder relativ neues Brauchtum, wir halten viel davon fest und erhalten es unter Freier Lizenz für die Nachwelt.</p>
+						<p>Vergleichsweise neues Brauchtum ist der „Lebendige Kreuzweg“ – immerhin aber schon 20 Jahre alt und eine von nur wenigen solchen Veranstaltungen außerhalb Italiens.</p>	
+
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025_Lebendiger_Kreuzweg_Ulm_Neu-Ulm_P1047736.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/2025-01-19_Gaenstorbruecke_DJI_20250119144401_0182_D.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Dokumentation einer sich verändernden Stadt</h3>
+						<p>Neu-Ulm und Ulm verändern sich ständig – Baustellen prägen nicht nur während der Bauzeit die Stadt, sondern unterteilen das Stadtbild klar in ein „vorher“ und „nachher“.</p>
+						<p>Wir versuchen, das verschwindende „vorher“ und die Bauphase für die Nachwelt zu erhalten! Hier die Gänstorbrücke am Neujahrstag 2025…</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025-01-19_Gaenstorbruecke_DJI_20250119144401_0182_D.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/2025_Gänstorbrücke_demolition_aerial_view_06.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Dokumentation einer sich verändernden Stadt</h3>
+						<p>Neu-Ulm und Ulm verändern sich ständig – Baustellen prägen nicht nur während der Bauzeit die Stadt, sondern unterteilen das Stadtbild klar in ein „vorher“ und „nachher“.</p>
+						<p>Wir versuchen, das verschwindende „vorher“ und die Bauphase für die Nachwelt zu erhalten! Hier die Gänstorbrücke direkt nach dem Abbruch der östlichen Brückenhälfte!</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025_Gänstorbrücke_demolition_aerial_view_06.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/20240519_gaenstorbruecke_vom_berblingerturm.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Dokumentation einer sich verändernden Stadt</h3>
+						<p>Neu-Ulm und Ulm verändern sich ständig – Baustellen prägen nicht nur während der Bauzeit die Stadt, sondern unterteilen das Stadtbild klar in ein „vorher“ und „nachher“.</p>
+						<p>Wir versuchen, das verschwindende „vorher“ und die Bauphase für die Nachwelt zu erhalten! Vergänglicher Anblick: Die Gänstorbrücke mit Behelfsstützen.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:20240519_gaenstorbruecke_vom_berblingerturm.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/2025_Gänstorbrücke_demolition_P1078242.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Dokumentation einer sich verändernden Stadt</h3>
+						<p>Neu-Ulm und Ulm verändern sich ständig – Baustellen prägen nicht nur während der Bauzeit die Stadt, sondern unterteilen das Stadtbild klar in ein „vorher“ und „nachher“.</p>
+						<p>Wir versuchen, das verschwindende „vorher“ und die Bauphase für die Nachwelt zu erhalten! In wenigen Tagen war die Osthälfte der Gänstorbrücke abgerissen.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025_Gänstorbrücke_demolition_P1078242.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/2025_Gänstorbrücke_demolition_P1078224.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Dokumentation einer sich verändernden Stadt</h3>
+						<p>Neu-Ulm und Ulm verändern sich ständig – Baustellen prägen nicht nur während der Bauzeit die Stadt, sondern unterteilen das Stadtbild klar in ein „vorher“ und „nachher“.</p>
+						<p>Wir versuchen, das verschwindende „vorher“ und die Bauphase für die Nachwelt zu erhalten! In wenigen Tagen war die Osthälfte der Gänstorbrücke abgerissen.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:2025_Gänstorbrücke_demolition_P1078224.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Florian_Zimmer_Theater_tags.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Baudenkmäler und ganz normale Gebäude</h3>
+						<p>Egal ob Kirchengebäude oder Profanbauten: Es gibt Aktive, die sich sogar zum Ziel gesetzt haben, <i>jedes</i> Gebäude der Stadt unter Freier Lizenz zu veröffentlichen.</p>
+						<p>Wir beschränken uns auf Gebäude mit zugehörigem Wikidata-Eintrag – hier das Florian-Zimmer-Theater.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Florian_Zimmer_Theater_tags.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Deutsches_Musikfest_2025_P1078167.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Auch die ganz seltenen Ereignisse bebildern wir gemeinsam mit unserer Hauskamera.</p>
+						<p>Zum Deutschen Musikfest kamen MusikantInnen aus ganz Deutschland nach Neu-Ulm und Ulm. Mit unseren Fotos haben wir sogar die allerersten Bilder zum Wikipedia-Artikel des Deutschen Musikfest beitragen können!</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Deutsches_Musikfest_2025_P1078167.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+				
+				<section data-background-image="./localfiles/Deutsches_Musikfest_2025_P1078379.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Auch die ganz seltenen Ereignisse bebildern wir gemeinsam mit unserer Hauskamera.</p>
+						<p>Zum Deutschen Musikfest kamen MusikantInnen aus ganz Deutschland nach Neu-Ulm und Ulm. Selbst PolitikerInnen am Rande sind spannend – oft können somit die Wikipedia-Artikel der Personen aktualisiert oder erstmals bebildert werden.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Deutsches_Musikfest_2025_P1078379.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Deutsches_Musikfest_2025_P1078416.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Brauchtum und Veranstaltungen</h3>
+						<p>Auch die ganz seltenen Ereignisse bebildern wir gemeinsam mit unserer Hauskamera.</p>
+						<p>Alle Bilderserien sind immer stets nach Ereignis, Jahr und Ort in Wikimedia Commons einsortiert und tragen so zu einem über Jahrzehnte wachsenden Archiv bei.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Deutsches_Musikfest_2025_P1078416.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Ulm_Hauptbahnhof_DJI_20250531134307_0283_D.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>175 Jahre Ulm Hauptbahnhof</h3>
+						<p>Zum 1. Juli 2025 feierte Ulm Hbf seinen 175jährigen Geburtstag – und zu diesem Anlass wurde der Wikipedia-Artikel zum Bahnhof prominent „Artikel des Tages“ auf der Wikipedia-Startseite.</p>
+						<p>Zu solchen Anlässen zeigt sich die Zusammenarbeit zwischen temporärhaus- und Wikipedia-Community – wir haben noch direkt vor dem Jubiläumswochenende den aktuellen Zustand mit Kamera und Drohne festgehalten, so dass der Artikel die neuesten Ansichten des Bahnhofs zeigen konnte.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Ulm_Hauptbahnhof_DJI_20250531134307_0283_D.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Ulm_Hauptbahnhof_2025_P1078264.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>175 Jahre Ulm Hauptbahnhof</h3>
+						<p>Zum 1. Juli 2025 feierte Ulm Hbf seinen 175jährigen Geburtstag – und zu diesem Anlass wurde der Wikipedia-Artikel zum Bahnhof prominent „Artikel des Tages“ auf der Wikipedia-Startseite.</p>
+						<p>Zu solchen Anlässen zeigt sich die Zusammenarbeit zwischen temporärhaus- und Wikipedia-Community – wir haben noch direkt vor dem Jubiläumswochenende den aktuellen Zustand mit Kamera und Drohne festgehalten, so dass der Artikel die neuesten Ansichten des Bahnhofs zeigen konnte.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Ulm_Hauptbahnhof_2025_P1078264.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Ulm_Hauptbahnhof_2025_P1078265.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>175 Jahre Ulm Hauptbahnhof</h3>
+						<p>Zum 1. Juli 2025 feierte Ulm Hbf seinen 175jährigen Geburtstag – und zu diesem Anlass wurde der Wikipedia-Artikel zum Bahnhof prominent „Artikel des Tages“ auf der Wikipedia-Startseite.</p>
+						<p>Zu solchen Anlässen zeigt sich die Zusammenarbeit zwischen temporärhaus- und Wikipedia-Community – wir haben noch direkt vor dem Jubiläumswochenende den aktuellen Zustand mit Kamera und Drohne festgehalten, so dass der Artikel die neuesten Ansichten des Bahnhofs zeigen konnte.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Ulm_Hauptbahnhof_2025_P1078265.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Ulm_Hauptbahnhof_2025_P1078279.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>175 Jahre Ulm Hauptbahnhof</h3>
+						<p>Zum 1. Juli 2025 feierte Ulm Hbf seinen 175jährigen Geburtstag – und zu diesem Anlass wurde der Wikipedia-Artikel zum Bahnhof prominent „Artikel des Tages“ auf der Wikipedia-Startseite.</p>
+						<p>Zu solchen Anlässen zeigt sich die Zusammenarbeit zwischen temporärhaus- und Wikipedia-Community – wir haben noch direkt vor dem Jubiläumswochenende den aktuellen Zustand mit Kamera und Drohne festgehalten, so dass der Artikel die neuesten Ansichten des Bahnhofs zeigen konnte.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Ulm_Hauptbahnhof_2025_P1078279.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Sony_MZ-R500_3.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Objektfotos</h3>
+						<p>Nach Vorbild des Lokal K fotografieren wir seit 2024 auch Geräte und Objekte vor einem neutralen Studiohintergrund für die Verwendung – unter anderem – in der Wikipedia.</p>
+						<p>Von alten Musikplayern bis zu moderner Messtechnik: Von vielen dieser Geräte gab es vorher keine guten Fotos unter Freier Lizenz.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Sony_MZ-R500_3.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/KeySight_InfiniiVision_DSOX1204G_P1057851.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Objektfotos</h3>
+						<p>Nach Vorbild des Lokal K fotografieren wir seit 2024 auch Geräte und Objekte vor einem neutralen Studiohintergrund für die Verwendung – unter anderem – in der Wikipedia.</p>
+						<p>Von alten Musikplayern bis zu moderner Messtechnik: Von vielen dieser Geräte gab es vorher keine guten Fotos unter Freier Lizenz.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:KeySight_InfiniiVision_DSOX1204G_P1057851.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/KeySight_InfiniiVision_DSOX1204G_P1057855.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Objektfotos</h3>
+						<p>Nach Vorbild des Lokal K fotografieren wir seit 2024 auch Geräte und Objekte vor einem neutralen Studiohintergrund für die Verwendung – unter anderem – in der Wikipedia.</p>
+						<p>Von alten Musikplayern bis zu moderner Messtechnik: Von vielen dieser Geräte gab es vorher keine guten Fotos unter Freier Lizenz.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:KeySight_InfiniiVision_DSOX1204G_P1057855.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/QuickPic_IQP-500_P1046970.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Objektfotos</h3>
+						<p>Nach Vorbild des Lokal K fotografieren wir seit 2024 auch Geräte und Objekte vor einem neutralen Studiohintergrund für die Verwendung – unter anderem – in der Wikipedia.</p>
+						<p>Von alten Musikplayern bis zu moderner Messtechnik: Von vielen dieser Geräte gab es vorher keine guten Fotos unter Freier Lizenz.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:QuickPic_IQP-500_P1046970.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Rode_Wireless_Go_II_Set_2.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Objektfotos</h3>
+						<p>Nach Vorbild des Lokal K fotografieren wir seit 2024 auch Geräte und Objekte vor einem neutralen Studiohintergrund für die Verwendung – unter anderem – in der Wikipedia.</p>
+						<p>Von alten Musikplayern bis zu moderner Messtechnik: Von vielen dieser Geräte gab es vorher keine guten Fotos unter Freier Lizenz.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Rode_Wireless_Go_II_Set_2.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Dell_Wyse_5070_01.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Objektfotos</h3>
+						<p>Nach Vorbild des Lokal K fotografieren wir seit 2024 auch Geräte und Objekte vor einem neutralen Studiohintergrund für die Verwendung – unter anderem – in der Wikipedia.</p>
+						<p>Von alten Musikplayern bis zu moderner Messtechnik: Von vielen dieser Geräte gab es vorher keine guten Fotos unter Freier Lizenz.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Dell_Wyse_5070_01.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Dell_Wyse_5070_07.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Objektfotos</h3>
+						<p>Nach Vorbild des Lokal K fotografieren wir seit 2024 auch Geräte und Objekte vor einem neutralen Studiohintergrund für die Verwendung – unter anderem – in der Wikipedia.</p>
+						<p>Von alten Musikplayern bis zu moderner Messtechnik: Von vielen dieser Geräte gab es vorher keine guten Fotos unter Freier Lizenz.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Dell_Wyse_5070_07.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+
+<!-- Klammern in den dateinamen gehen net lokal -.-
+
+				<section data-background-image="./localfiles/Geschwister-Scholl-Straße_(Neu-Ulm)_Straßenschild.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Straßen und ihre Geschichte</h3>
+						<p>Selbst Straßen und Straßenschilder sind interessant für das kollektive Gedächtnis.</p>
+						<p>Über die Legendentafeln auf unseren Fotos lassen sich die NamensgeberInnen der Neu-Ulmer Straßen in Wikidata maschinenlesbar verlinken. So sind automatische Auswertungen möglich, nach wem Straßen in der Stadt benannt sind.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Deutsches_Technikmuseum_Berlin_mit_Rosinenbomber,_Luftaufnahme-0035.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Heinrichgasse_(Neu-Ulm)_Straßenschild.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Straßen und ihre Geschichte</h3>
+						<p>Selbst Straßen und Straßenschilder sind interessant für das kollektive Gedächtnis.</p>
+						<p>Über die Legendentafeln auf unseren Fotos lassen sich die NamensgeberInnen der Neu-Ulmer Straßen in Wikidata maschinenlesbar verlinken. So sind automatische Auswertungen möglich, nach wem Straßen in der Stadt benannt sind.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Deutsches_Technikmuseum_Berlin_mit_Rosinenbomber,_Luftaufnahme-0035.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Eckstraße_(Neu-Ulm)_Straßenschild.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Straßen und ihre Geschichte</h3>
+						<p>Selbst Straßen und Straßenschilder sind interessant für das kollektive Gedächtnis.</p>
+						<p>Über die Legendentafeln auf unseren Fotos lassen sich die NamensgeberInnen der Neu-Ulmer Straßen in Wikidata maschinenlesbar verlinken. So sind automatische Auswertungen möglich, nach wem Straßen in der Stadt benannt sind.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Deutsches_Technikmuseum_Berlin_mit_Rosinenbomber,_Luftaufnahme-0035.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Stolpersteine_Familie_Rosenthal_Wallstraße_Neu-Ulm_2.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Straßen und ihre Geschichte</h3>
+						<p>Und auch Stolpersteine und ihr räumlicher Kontext verknüpfen wir mit Wikidata.</p>
+						<p>So wird der mit den Stolpersteinen gewürdigten Menschen nicht nur vor Ort gedacht, sondern auch digital ihr Andenken ganz anders verknüpfbar und zugänglich.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Deutsches_Technikmuseum_Berlin_mit_Rosinenbomber,_Luftaufnahme-0035.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+
+				<section data-background-image="./localfiles/Geschwister-Scholl-Straße_(Neu-Ulm)_Straßenschild.jpg" >
+					<div style="position: absolute; width: 45%; left: 65%; top: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h3>Straßen und ihre Geschichte</h3>
+						<p>Selbst Straßen und Straßenschilder sind interessant für das kollektive Gedächtnis.</p>
+						<p>Über die Legendentafeln auf unseren Fotos lassen sich die NamensgeberInnen der Neu-Ulmer Straßen in Wikidata maschinenlesbar verlinken. So sind automatische Auswertungen möglich, nach wem Straßen in der Stadt benannt sind.</p>
+						<p><small>-stk, &lt;https://commons.wikimedia.org/wiki/File:Deutsches_Technikmuseum_Berlin_mit_Rosinenbomber,_Luftaufnahme-0035.jpg&gt;. CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by/4.0/deed.de&gt;</small></p>
+					</div>	
+				</section>
+-->
 
 			</div>
 
@@ -402,10 +529,13 @@ Reveal.addEventListener( 'customevent', function() {
 
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
-				progress: true,
+				controls: false,
+				progress: false,
 				center: true,
 				hash: true,
+				autoPlayMedia: true,
+				autoSlide: 11000,
+				loop: true,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
@@ -422,7 +552,7 @@ Reveal.addEventListener( 'customevent', function() {
 
 		</script>
 
-		<!-- Everything below this point is only used for the reveal.js demo page -->
+		<!-- Everything below this point is only used for the reveal.js demo page 
 
 		<header class="reveal-header">
 			<a class="reveal-header-button" href="https://github.com/hakimel/reveal.js">Source on <em>GitHub</em></a>
@@ -534,7 +664,7 @@ Reveal.addEventListener( 'customevent', function() {
 		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(g, s);
 		})(document, 'script');
-		</script>
+		</script> -->
 
 	</body>
 </html>
